@@ -19,7 +19,93 @@ Ext.define("Tic.view.Main", {
                     "to use tabs, lists and forms to create a simple app</p>",
                     '<h2>Sencha Touch (2.0.0)</h2>'
                 ].join("")
-            }
+            },
+            {
+                title: 'Tic',
+                iconCls: 'home',
+                cls: 'home',
+                styleHtmlContent: true,
+                html: [
+                    'test'
+                ].join("")
+            },
+            {
+                xtype: 'nestedlist',
+                title: 'Blog',
+                iconCls: 'star',
+                displayField: 'title',
+                
+                store: {
+                    type: 'tree',
+                    
+                    fields: [
+                        'title', 'link', 'author', 'contentSnippet', 'content',
+                        {name: 'leaf', defaultValue: true}
+                    ],
+                    
+                    root: {
+                        leaf: false
+                    },
+                    
+                    proxy: {
+                        type: 'jsonp',
+                        url: '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://diegocalderon.info/travels/feed/',
+                        reader: {
+                            type: 'json',
+                            rootProperty: 'responseData.feed.entries'
+                        }
+                    }
+                },
+                
+                detailCard: {
+                    xtype: 'panel',
+                    scrollable: true,
+                    styleHtmlContent: true
+                },
+
+                listeners: {
+                    itemtap: function(nestedList, list, index, element, post) {
+                        this.getDetailCard().setHtml(post.get('content'));
+                    }
+                }
+            },
+            {
+                title: 'Contact',
+                iconCls: 'user',
+                xtype: 'formpanel',
+                url: 'contact.php',
+                layout: 'vbox',
+
+                items: [
+                    {
+                        xtype: 'fieldset',
+                        title: 'Contact Us',
+                        instructions: '(email address is optional)',
+                        items: [
+                            {
+                                xtype: 'textfield',
+                                label: 'Name'
+                            },
+                            {
+                                xtype: 'emailfield',
+                                label: 'Email'
+                            },
+                            {
+                                xtype: 'textareafield',
+                                label: 'Message'
+                            }
+                        ]
+                    },
+                    {
+                        xtype: 'button',
+                        text: 'Send',
+                        ui: 'confirm',
+                        handler: function() {
+                            this.up('formpanel').submit();
+                        }
+                    }
+                ]
+            }   
         ]
     }
 });

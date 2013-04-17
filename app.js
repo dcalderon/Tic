@@ -5,7 +5,7 @@ Ext.application({
         'Ext.MessageBox'
     ],
 
-    views: ['Main'],
+    views: ['Main', 'TicTacScreen', 'FirstImageTouch'],
 
     icon: {
         '57': 'resources/icons/Icon.png',
@@ -30,7 +30,16 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('Tic.view.Main'));
+        // Ext.Viewport.add(Ext.create('Tic.view.Main'));
+        Ext.Viewport.add(Ext.create('Tic.view.TicTacScreen'));
+        // Ext.Viewport.add(Ext.create('Tic.view.FirstImageTouch', {
+        //             title: 'Orion Nebula',
+        //             description: 'The Orion Nebula is rather pretty',
+        //             src: 'http://apod.nasa.gov/apod/image/1202/oriondeep_andreo_960.jpg',
+        //             fullscreen: true
+        //         })
+        //     )
+        
     },
 
     onUpdated: function() {
