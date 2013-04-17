@@ -32,3 +32,8 @@ Ext.define("Tic.view.TicTacScreen", {
         ]
     }
 });
+// 
+// lets have three images...
+// http://src.sencha.io/740/500/http://diegocalderon.info/travels/wp-content/uploads/2012/08/Brussels40.jpg
+// http://src.sencha.io/740/500/http://diegocalderon.info/travels/wp-content/uploads/2012/07/Berlin15.jpg
+// http://src.sencha.io/740/500/http://diegocalderon.info/travels/wp-content/uploads/2012/07/Prague43.jpg

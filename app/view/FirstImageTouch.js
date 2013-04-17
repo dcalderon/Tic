@@ -16,6 +16,7 @@ Ext.define('Tic.view.FirstImageTouch', {
     //this function is called whenever you tap on the image
     onTap: function() {
         Ext.Msg.alert(this.getTitle(), this.getDescription());
+        this.setSrc('http://src.sencha.io/740/500/http://diegocalderon.info/travels/wp-content/uploads/2012/07/Berlin15.jpg')
     }
 });
 
