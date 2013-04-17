@@ -27,7 +27,7 @@ Ext.define("Tic.view.TicTacScreen", {
                 description: 'Is this working at all?',
                 //src: 'http://diegocalderon.info/travels/wp-content/uploads/2012/07/Prague43.jpg',
                 //used the src.sencha.io to resize image...
-                src: 'http://src.sencha.io/740/500/http://diegocalderon.info/travels/wp-content/uploads/2012/07/Prague43.jpg',
+                //src: 'http://src.sencha.io/740/500/http://diegocalderon.info/travels/wp-content/uploads/2012/07/Prague43.jpg',
             }
         ]
     }
