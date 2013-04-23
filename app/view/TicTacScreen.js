@@ -21,7 +21,7 @@ Ext.define("Tic.view.TicTacScreen", {
                 html: [
                     '<table width="100%" cellpadding="3" cellspacing="3">',
                     '<table>',
-                    '<tr>',
+                    '<tr class ="one">',
                         '<td>1</td>',
                         '<td>2</td>',
                         '<td>3</td>',
@@ -37,7 +37,18 @@ Ext.define("Tic.view.TicTacScreen", {
                         '<td>9</td>',
                     '</tr>',
                     '</table>'
-                ].join("")
+                ].join(""),
+                listeners: [
+                {
+                    element: 'element',
+                    delegate: 'tr.one',
+                    event: 'tap',
+                    fn: function() {
+                        Ext.Msg.alert('YOU DID IT');
+                    }
+                }
+                ]
+                    
             }
             // {
             //     title: 'test',
