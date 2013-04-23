@@ -8,32 +8,42 @@ Ext.define("Tic.view.TicTacScreen", {
         tabBarPosition: 'bottom',
         items: [
             {
-                title: 'Home',
+                title: 'TicTacToe',
                 iconCls: 'home',
+                xtype: 'toucher',
+                description: 'Is this working at all?',
+            },
+            {
+                title: 'HtmlToe',
+                iconCls: 'star',
                 cls: 'home',
                 styleHtmlContent: true,
                 html: [
-                    'on click let us change'
+                    '<table width="100%" cellpadding="3" cellspacing="3">',
+                    '<table>',
+                    '<tr>',
+                        '<td>Test</td>',
+                        '<td>Test</td>',
+                        '<td>Test</td>',
+                    '</tr>',
+                    '<tr>',
+                        '<td>Test</td>',
+                        '<td>Test</td>',
+                        '<td>Test</td>',
+                    '</tr>',
+                    '<tr>',
+                        '<td>Test</td>',
+                        '<td>Test</td>',
+                        '<td>Test</td>',
+                    '</tr>',
+                    '</table>'
                 ].join("")
-            },
-            {
-                title: 't',
-                xtype: 'image',
-                src: 'http://www.sencha.com/assets/images/sencha-avatar-64x64.png',
-            },
-            {
-                title: 'TicTacToe',
-                xtype: 'toucher',
-                description: 'Is this working at all?',
-                //src: 'http://diegocalderon.info/travels/wp-content/uploads/2012/07/Prague43.jpg',
-                //used the src.sencha.io to resize image...
-                //src: 'http://src.sencha.io/740/500/http://diegocalderon.info/travels/wp-content/uploads/2012/07/Prague43.jpg',
             }
+            // {
+            //     title: 'test',
+            //     iconCls: 'home',
+            //     xtype: 'vertical',
+            // }
         ]
     }
 });
-// 
-// lets have three images...
-// http://src.sencha.io/740/500/http://diegocalderon.info/travels/wp-content/uploads/2012/08/Brussels40.jpg
-// http://src.sencha.io/740/500/http://diegocalderon.info/travels/wp-content/uploads/2012/07/Berlin15.jpg
-// http://src.sencha.io/740/500/http://diegocalderon.info/travels/wp-content/uploads/2012/07/Prague43.jpg
