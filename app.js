@@ -5,7 +5,7 @@ Ext.application({
         'Ext.MessageBox'
     ],
 
-    views: ['Main', 'TicTacScreen', 'FirstImageTouch'],
+    views: ['Main', 'TicTacScreen', 'FirstImageTouch'], //, 'Vertical', 'Horizontal'],
 
     icon: {
         '57': 'resources/icons/Icon.png',

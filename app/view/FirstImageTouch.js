@@ -3,12 +3,14 @@ Ext.define('Tic.view.FirstImageTouch', {
     xtype: 'toucher',
     config: {
         title: null,
-        src: 'http://src.sencha.io/740/500/http://diegocalderon.info/travels/wp-content/uploads/2012/07/Prague43.jpg',
+        src: 'http://src.sencha.io/420/200/http://diegocalderon.info/travels/wp-content/uploads/2012/07/Berlin15.jpg',
         description: null,
         count: 0,
-        choices: ['http://src.sencha.io/740/500/http://diegocalderon.info/travels/wp-content/uploads/2012/07/Prague43.jpg',
-                    'http://src.sencha.io/740/500/http://diegocalderon.info/travels/wp-content/uploads/2012/07/Berlin15.jpg',
-                    'http://src.sencha.io/740/500/http://diegocalderon.info/travels/wp-content/uploads/2012/08/Brussels40.jpg']
+        choices: [
+        'http://src.sencha.io/420/200/http://diegocalderon.info/travels/wp-content/uploads/2012/07/Berlin15.jpg',
+        'http://src.sencha.io/420/200/http://diegocalderon.info/travels/wp-content/uploads/2012/08/Brussels40.jpg',
+        'http://src.sencha.io/420/200/http://diegocalderon.info/travels/wp-content/uploads/2012/07/Prague43.jpg',
+        ]
     },
 
     //sets up our tap event listener
