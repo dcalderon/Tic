@@ -13,6 +13,32 @@ Ext.define("Tic.view.TicTacScreen", {
                 xtype: 'toucher',
                 description: 'Is this working at all?',
             },
+            {
+                title: 'HtmlToe',
+                iconCls: 'star',
+                cls: 'home',
+                styleHtmlContent: true,
+                html: [
+                    '<table width="100%" cellpadding="3" cellspacing="3">',
+                    '<table>',
+                    '<tr>',
+                        '<td>Test</td>',
+                        '<td>Test</td>',
+                        '<td>Test</td>',
+                    '</tr>',
+                    '<tr>',
+                        '<td>Test</td>',
+                        '<td>Test</td>',
+                        '<td>Test</td>',
+                    '</tr>',
+                    '<tr>',
+                        '<td>Test</td>',
+                        '<td>Test</td>',
+                        '<td>Test</td>',
+                    '</tr>',
+                    '</table>'
+                ].join("")
+            }
             // {
             //     title: 'test',
             //     iconCls: 'home',
