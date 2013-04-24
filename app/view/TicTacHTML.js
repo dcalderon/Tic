@@ -1,0 +1,48 @@
+Ext.define('Tic.view.TicTacHTML', {
+    extend: 'Ext.Container',
+    xtype: 'tic',
+    config: {
+        title: 'test',
+        description: 'hopefully this looks cool',
+        counts: [0,0,0,0,0,0,0,0,0],
+        choices: [//'resources/images/x.jpg',
+                    'resources/images/blank.jpg',
+                    'resources/images/o.jpg',
+                    'resources/images/x.jpg',
+                    //'resources/images/blank.jpg'
+                    ],
+                    
+        // topHTML: '<table width="100%" cellpadding="3" cellspacing="3"><table><tr>',
+        sq1: '<td class="one"><img src="resources/images/blank.jpg" width="100" height="100"></td>',
+        sq2: '<td class="two"><img src="resources/images/blank.jpg" width="100" height="100"></td>',
+        sq3: '<td class="three"><img src="resources/images/blank.jpg" width="100" height="100"></td>',
+        sq4: '<td class="four"><img src="resources/images/blank.jpg" width="100" height="100"></td>',
+        sq5: '<td class="five"><img src="resources/images/blank.jpg" width="100" height="100"></td>',
+        sq6: '<td class="six"><img src="resources/images/blank.jpg" width="100" height="100"></td>',
+        sq7: '<td class="seven"><img src="resources/images/blank.jpg" width="100" height="100"></td>',
+        sq8: '<td class="eight"><img src="resources/images/blank.jpg" width="100" height="100"></td>',
+        sq9: '<td class="nine"><img src="resources/images/blank.jpg" width="100" height="100"></td>',
+        // bottomHTML: '</tr></table>',
+        
+        html: [
+            '<table width="100%" cellpadding="0" cellspacing="2">',
+            '<table>',
+            '<tr>',
+                '<td class="one"><img src="resources/images/blank.jpg" width="100" height="100"></td>',
+                '<td class="two"><img src="resources/images/blank.jpg" width="100" height="100"></td>',
+                '<td class="three"><img src="resources/images/blank.jpg" width="100" height="100"></td>',
+            '</tr>',
+            '<tr>',
+                '<td class="four"><img src="resources/images/blank.jpg" width="100" height="100"></td>',
+                '<td class="five"><img src="resources/images/blank.jpg" width="100" height="100"></td>',
+                '<td class="six"><img src="resources/images/blank.jpg" width="100" height="100"></td>',
+            '</tr>',
+            '<tr>',
+                '<td class="seven"><img src="resources/images/blank.jpg" width="100" height="100"></td>',
+                '<td class="eight"><img src="resources/images/blank.jpg" width="100" height="100"></td>',
+                '<td class="nine"><img src="resources/images/blank.jpg" width="100" height="100"></td>',
+            '</tr>',
+            '</table>'
+        ].join(""),
+    },
+});
